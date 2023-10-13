@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/styles.css">
+    <style></style>
+</head>
+<body>
+    <header>
+        <img class="imagen" src="https://yt3.googleusercontent.com/ytc/APkrFKZsFoaeavGAcb7HEEtmH5EVTT0GS4rxeRaRXXdK=s900-c-k-c0x00ffffff-no-rj" >        
+    </header>
+    
+    <nav>
+        <ul>
+            <li>Menu</p></li>
+            <li><a href="./Principal.html">Inicio</a></li>
+            <li><a href="./Tablas.html">Tablas</a></li>
+            <li><a href="./Video.html">Video</a></li>
+            <li><a href="./Formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div style="display: flex;
+        justify-content: center;
+        align-items: center;"><b>Formulario</b></div>
+        <div class="centered-div">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </td>
+                        <td>
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </td>
+                        <td>
+                            <label for="correo">Correo:</label>
+                            <input type="email" id="correo" name="correo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad">
+                        </td>
+                        <td>
+                            <label for="edad">Edad:</label>
+                            <input type="number" id="edad" name="edad">
+                        </td>
+                    </tr>
+                </table>
+                <button class="buttones" type="button" id="openModalBtn">Mostrar Datos</button>
+            </form>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+                <h2>Datos del Formulario</h2>
+                <p id="modalContent"></p>
+            </div>
+        </div>        
+    </main>
+    
+    <footer>
+        &copy; 2023 Mi Página Web
+    </footer>
+    <script src="../JavaScript/scritpmodal.js"></script>
+</body>
+</html>
